@@ -1,13 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Neeraj Sai Kondaveeti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">NSK Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="position-indicator">
+                <div class="indicator-bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="section hero-section">
+        <div class="container">
+            <h1 class="hero-title">Neeraj Sai Kondaveeti</h1>
+            <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button class="cta-button" id="cta-button">Get In Touch</button>
+        </div>
+    </header>
+
+    <!-- About Section with Fixed Background -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Grad student in Information Management at the University of Illinois at Urbana-Champaign. I work as Student Data Engineer at the University of Illinois College of Veterinary Medicine. My interests include exploring data models, AI prototyping and developing question-driven solutions.<p></p>
+
+</p>I have worked as Senior Analyst at Capgemini MNC. I have also interned with Veterinary Innovation Hub at UIUC, Capgemini, Noobtron. I graduated from CMR-JNTUH in 2022.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Multi-column Layout -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-column">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript ES6+</li>
+                        <li>Modern JavaScript Frameworks</li>
+                        <li>SASS/SCSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python & Django</li>
+                        <li>RESTful APIs</li>
+                        <li>PostgreSQL & MongoDB</li>
+                        <li>GraphQL</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS & Heroku</li>
+                        <li>Webpack</li>
+                        <li>Figma & Adobe XD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Carousel Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="assets/image.jpg" alt="Project 1">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack e-commerce solution with vanilla JavaScript and Node.js</p>
+                            <button class="modal-trigger" data-modal="modal1">View Details</button>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/image.jpg" alt="Project 2">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative project management tool with real-time updates</p>
+                            <button class="modal-trigger" data-modal="modal2">View Details</button>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/image.jpg" alt="Project 3">
+                            <h3>Social Media Dashboard</h3>
+                            <p>Analytics dashboard for social media performance tracking</p>
+                            <button class="modal-trigger" data-modal="modal3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section with Video -->
+    <section id="experience" class="section experience-section video-section">
+        <!-- Video Background Layer -->
+        <video class="video-background" autoplay muted loop playsinline>
+            <!-- Primary: Pexels coding video -->
+            <source src="https://player.vimeo.com/external/425439577.hd.mp4?s=cec0d2af30c5c0f5e7a3cc2f5e3a5c3f5b3f5f3f&profile_id=175" type="video/mp4">
+            <!-- Alternative: Abstract tech animation -->
+            <source src="https://cdn.pixabay.com/vimeo/328940142/digital-19669.mp4?width=1280&hash=b3c7e6e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7" type="video/mp4">
+            <!-- Fallback: Working sample video -->
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Overlay for better text visibility -->
+        <div class="video-overlay"></div>
+        
+        <!-- Content Layer -->
+        <div class="container video-content">
+            <h2 class="video-title">Full Stack Developer</h2>
+            <p class="video-subtitle">Python • Machine Learning • Frontend Development • Data Engineering</p>
+            <div class="skills-animation">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+            </div>
+            <button class="video-cta-button">Explore My Work</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new opportunities and interesting projects.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>nsk9@illinois.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (447) 902-6552</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Urbana-Champaign, IL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neeraj Sai Kondaveeti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>E-Commerce Platform</h3>
+            <p>A comprehensive e-commerce solution built with modern web technologies. This platform handles thousands of daily transactions and provides a seamless shopping experience for users worldwide.</p>
+            
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Real-time inventory management system</li>
+                <li>Advanced search with filters and sorting</li>
+                <li>Secure payment processing with multiple gateways</li>
+                <li>Responsive design for all devices</li>
+                <li>Admin dashboard with analytics</li>
+                <li>Customer review and rating system</li>
+                <li>Wishlist and cart persistence</li>
+                <li>Email notifications and order tracking</li>
+            </ul>
+            
+            <h4>Technologies Used:</h4>
+            <ul>
+                <li>Frontend: Vanilla JavaScript, Custom State Management, CSS3/Sass</li>
+                <li>Backend: Node.js, Express, JWT Authentication</li>
+                <li>Database: MongoDB, Mongoose ODM, Redis Cache</li>
+                <li>Payment: Stripe API, PayPal Integration</li>
+                <li>Cloud: AWS S3 for images, CloudFront CDN</li>
+                <li>Testing: Unit Testing, Integration Testing</li>
+            </ul>
+            
+            <h4>Results & Impact:</h4>
+            <p>The platform has processed over $2M in transactions, serves 10,000+ active users, and maintains a 99.9% uptime. Load time improved by 60% after optimization, resulting in a 25% increase in conversion rate.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Task Management App</h3>
+            <p>A real-time collaborative task management application with drag-and-drop functionality, team collaboration features, and progress tracking.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Real-time updates using Socket.io</li>
+                <li>Drag-and-drop task boards</li>
+                <li>Team collaboration tools</li>
+                <li>Progress analytics</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Social Media Dashboard</h3>
+            <p>An analytics dashboard that aggregates data from multiple social media platforms to provide insights and performance metrics.</p>
+            <h4>Features:</h4>
+            <ul>
+                <li>Multi-platform integration</li>
+                <li>Real-time data visualization</li>
+                <li>Custom reporting tools</li>
+                <li>Automated insights</li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>

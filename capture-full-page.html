@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capture Full Page</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .instructions {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h1 { color: #2c3e50; }
+        h2 { color: #3498db; }
+        .step {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-left: 4px solid #3498db;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to View Your Site Like the Example (2.png)</h1>
+    
+    <div class="instructions">
+        <h2>Method 1: Browser Zoom (Quickest)</h2>
+        <div class="step">1. Open your site: <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></div>
+        <div class="step">2. Press <code>Ctrl/Cmd + -</code> to zoom out to 25%</div>
+        <div class="step">3. You'll see all sections as colored stripes</div>
+    </div>
+    
+    <div class="instructions">
+        <h2>Method 2: Chrome DevTools</h2>
+        <div class="step">1. Open your site in Chrome</div>
+        <div class="step">2. Press <code>F12</code> to open DevTools</div>
+        <div class="step">3. Press <code>Ctrl/Cmd + Shift + P</code></div>
+        <div class="step">4. Type "Capture full size screenshot"</div>
+        <div class="step">5. Press Enter - it will save a full page image</div>
+    </div>
+    
+    <div class="instructions">
+        <h2>Method 3: Firefox Screenshot</h2>
+        <div class="step">1. Open your site in Firefox</div>
+        <div class="step">2. Press <code>Ctrl/Cmd + Shift + S</code></div>
+        <div class="step">3. Click "Save full page"</div>
+        <div class="step">4. This captures the entire page as one image</div>
+    </div>
+    
+    <div class="instructions">
+        <h2>Method 4: Preview Frame</h2>
+        <div class="step">Open: <a href="layout-preview.html" target="_blank">layout-preview.html</a></div>
+        <div class="step">This shows your site in a scaled iframe</div>
+    </div>
+    
+    <div class="instructions">
+        <h2>What You Should See:</h2>
+        <div class="step">✓ Dark blue gradient header section</div>
+        <div class="step">✓ White about section with text</div>
+        <div class="step">✓ Light gray skills section</div>
+        <div class="step">✓ White portfolio section</div>
+        <div class="step">✓ Dark experience section with video</div>
+        <div class="step">✓ Light gray contact section</div>
+        <div class="step">✓ Dark gray footer</div>
+    </div>
+</body>
+</html>
