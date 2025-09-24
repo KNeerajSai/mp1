@@ -1,0 +1,26 @@
+
+> mp1@1.0.0 start
+> webpack-dev-server
+
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: http://localhost:8080/, http://[::1]:8080/
+<i> [webpack-dev-server] Content not from webpack is served from '/Users/deepthikondaveeti/Documents/mp1/build' directory
+<i> [webpack-dev-middleware] wait until bundle finished: /
+asset bundle.js 374 KiB [emitted] (name: main) 1 related asset
+asset assets/image.jpg 151 KiB [emitted] [from: assets/image.jpg] [copied]
+asset f7c3d1bc154868c1bcc8.jpg 151 KiB [emitted] [immutable] [from: assets/image.jpg] (auxiliary name: main)
+asset index.html 13.2 KiB [emitted]
+runtime modules 27.9 KiB 13 modules
+modules by path ../node_modules/ 223 KiB
+  modules by path ../node_modules/webpack-dev-server/client/ 76.3 KiB 16 modules
+  modules by path ../node_modules/style-loader/dist/runtime/*.js 5.84 KiB 6 modules
+  modules by path ../node_modules/webpack/hot/*.js 5.2 KiB 4 modules
+  modules by path ../node_modules/html-entities/lib/*.js 115 KiB 4 modules
+  modules by path ../node_modules/css-loader/dist/runtime/*.js 2.74 KiB 2 modules
+  + 3 modules
+modules by path ./ 75.1 KiB (javascript) 151 KiB (asset)
+  modules by path ./css/*.scss 48.3 KiB
+    ./css/main.scss 2.53 KiB [built] [code generated]
+    ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./css/main.scss 45.7 KiB [built] [code generated]
+  + 4 modules
+webpack 5.101.3 compiled successfully in 2025 ms
